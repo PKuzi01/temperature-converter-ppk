@@ -1,30 +1,10 @@
-/* Fonts */
-/* D3 Radicalism */
-@font-face  {
-    font-family: 'D3 Radicalism';
-    src: url(../media/fonts/d3-radicalism/D3Radicalism.otf) format('opentype'),
-         url(../media/fonts/d3-radicalism/D3Radicalism.ttf) format('truetype'),
-         url(../media/fonts/d3-radicalism/D3Radicalism.woff) format('woff'),
-         url(../media/fonts/d3-radicalism/D3Radicalism.woff2) format('woff2');
-}
-
-/* Savec */
-@font-face  {
-    font-family: 'Savec';
-    src: url(../media/fonts/savec/savec.otf) format('opentype'),
-         url(../media/fonts/savec/savec.ttf) format('truetype'),
-         url(../media/fonts/savec/savec.woff) format('woff'),
-         url(../media/fonts/savec/savec.woff2) format('woff2');
-}
-
 /* Styling vars */
 :root {
-    --heading-font: 'D3 Radicalism';
-    --text-font: 'Savec';
+    --heading-font: "Anta", sans-serif;
+    --text-font: "Space Grotesk", sans-serif;
 }
 
 /* Single-use values */
-
 body {
     background-image: url('../media/images/bg.jpg');
     background-size: cover;
@@ -35,7 +15,58 @@ body {
     color: #fff;
 }
 
-.container {
+.app {
     width: 100%;
     height: 95.5vh;
 }
+
+.container {
+    background-color: #7babb768 ;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 9px 9px 12px #529eb1dd;
+}
+
+.hero > h1 {
+    font-family: var(--heading-font);
+    letter-spacing: 2px;
+    font-size: 60px;
+}
+
+.output > p {
+    font-family: var(--text-font);
+    font-size: 22px;
+}
+
+.answer {
+    margin: 30px;
+}
+
+.answer > h3 {
+    font-family: var(--text-font);
+    font-size: 30px;
+    margin: 0;
+}
+
+.footer > footer {
+    font-family: var(--text-font);
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer > footer > a {
+    text-decoration: none;
+    color: #529eb1;
+}
+
+/* Same value, multiple elements/classes */
+.input > input, .input > select, .output > select, .submit > input {
+    padding: 12px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    font-family: var(--text-font);
+}
+

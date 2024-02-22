@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <h1>Temperature converter</h1>
-        </div>
-
-        <div class="convert">
-            <div class="input">
-                <input type="text" name="Input Temperature" id="inputValueResp">
-                <select name="Unit of Measurement" id="inputUnitResp">
-                    <option value="celsius" id="celsius" selected>Celsius</option>
-                    <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
-                    <option value="kelvin" id="kelvin">Kelvin</option>
-                </select>
-                <div class="output">
-                    <p>Convert to:</p>
-                    <select name="Unit of Measurement" id="outputUnitResp">
+    <div class="app">
+        <div class="container">
+            <div class="hero">
+                <h1>Temperature Converter</h1>
+            </div>
+    
+            <div class="convert">
+                <div class="input">
+                    <input type="text" placeholder="Type number here" name="Input Temperature" id="inputValueResp" class="inputText">
+                    <select name="Unit of Measurement" id="inputUnitResp" class="inputUnit">
                         <option value="celsius" id="celsius" selected>Celsius</option>
                         <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
                         <option value="kelvin" id="kelvin">Kelvin</option>
                     </select>
-                    <br>
-                    <input type="button" value="Submit" id="submit">
+                </div>
+                <div class="output">
+                    <p>Convert to:</p>
+                    <select name="Unit of Measurement" id="outputUnitResp" class="outputUnit">
+                        <option value="celsius" id="celsius" selected>Celsius</option>
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select>
+                    <div class="submit">
+                        <input type="button" value="Submit" id="submit" class="submitButton">
+                    </div>
+                    
                 </div>
                 <div class="answer">
                     <h3 class="response" id="response">Your conversion will appear here</h3>
                 </div>
             </div>
         </div>
+        
 
         <div class="footer">
             <footer>
