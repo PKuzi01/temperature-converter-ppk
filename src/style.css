@@ -1,0 +1,41 @@
+/* Fonts */
+/* D3 Radicalism */
+@font-face  {
+    font-family: 'D3 Radicalism';
+    src: url(../media/fonts/d3-radicalism/D3Radicalism.otf) format('opentype'),
+         url(../media/fonts/d3-radicalism/D3Radicalism.ttf) format('truetype'),
+         url(../media/fonts/d3-radicalism/D3Radicalism.woff) format('woff'),
+         url(../media/fonts/d3-radicalism/D3Radicalism.woff2) format('woff2');
+}
+
+/* Savec */
+@font-face  {
+    font-family: 'Savec';
+    src: url(../media/fonts/savec/savec.otf) format('opentype'),
+         url(../media/fonts/savec/savec.ttf) format('truetype'),
+         url(../media/fonts/savec/savec.woff) format('woff'),
+         url(../media/fonts/savec/savec.woff2) format('woff2');
+}
+
+/* Styling vars */
+:root {
+    --heading-font: 'D3 Radicalism';
+    --text-font: 'Savec';
+}
+
+/* Single-use values */
+
+body {
+    background-image: url('../media/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* TAKE THIS OUTTTTTT */
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 95.5vh;
+}
