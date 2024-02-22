@@ -10,7 +10,6 @@
     <div class="container">
         <div class="hero">
             <h1>Temperature converter</h1>
-            <p>Convert and find out!</p>
         </div>
 
         <div class="convert">
@@ -21,10 +20,30 @@
                     <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
                     <option value="kelvin" id="kelvin">Kelvin</option>
                 </select>
+                <div class="output">
+                    <p>Convert to:</p>
+                    <select name="Unit of Measurement" id="dropdown">
+                        <option value="celsius" id="celsius" selected>Celsius</option>
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select>
+                    <br>
+                    <input type="button" value="Submit">
+                </div>
+                <div class="answer">
+                    <h3 class="response" id="response">Your conversion will appear here</h3>
+                </div>
             </div>
         </div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <footer>
+                Coded by
+                <a href="#">Philisizwe Kuzwayo</a>
+                 and hosted on 
+                <a href="#">Github</a>.
+            </footer>
+        </div>
     </div>
 
     <script src="src/script.js"></script>
