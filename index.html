@@ -14,21 +14,21 @@
 
         <div class="convert">
             <div class="input">
-                <input type="text" name="Input Temperature" id="inputValue">
-                <select name="Unit of Measurement" id="dropdown">
+                <input type="text" name="Input Temperature" id="inputValueResp">
+                <select name="Unit of Measurement" id="inputUnitResp">
                     <option value="celsius" id="celsius" selected>Celsius</option>
                     <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
                     <option value="kelvin" id="kelvin">Kelvin</option>
                 </select>
                 <div class="output">
                     <p>Convert to:</p>
-                    <select name="Unit of Measurement" id="dropdown">
+                    <select name="Unit of Measurement" id="outputUnitResp">
                         <option value="celsius" id="celsius" selected>Celsius</option>
                         <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
                         <option value="kelvin" id="kelvin">Kelvin</option>
                     </select>
                     <br>
-                    <input type="button" value="Submit">
+                    <input type="button" value="Submit" id="submit">
                 </div>
                 <div class="answer">
                     <h3 class="response" id="response">Your conversion will appear here</h3>
