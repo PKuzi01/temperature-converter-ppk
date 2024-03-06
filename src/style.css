@@ -89,6 +89,7 @@ body {
     /* Single-use value */
     .app {
         margin: 50px 10px;
+        height: 850px
     }
 
     .container {
