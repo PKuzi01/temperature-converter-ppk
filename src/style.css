@@ -16,27 +16,31 @@ body {
 }
 
 .app {
-    width: 100%;
-    height: 95.5vh;
+    max-width: 800px;
+    margin: 50px auto;
 }
 
 .container {
     background-color: #7babb768 ;
-    margin: 25px;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 30px;
+    border-radius: 25px;
     box-shadow: 9px 9px 12px #529eb1dd;
 }
 
 .hero > h1 {
     font-family: var(--heading-font);
+    text-align: center;
     letter-spacing: 2px;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .output > p {
     font-family: var(--text-font);
     font-size: 22px;
+}
+
+.submit {
+    display: inline-block;
 }
 
 .answer {
@@ -45,6 +49,7 @@ body {
 
 .answer > h3 {
     font-family: var(--text-font);
+    text-align: center;
     font-size: 30px;
     margin: 0;
 }
@@ -53,6 +58,7 @@ body {
     font-family: var(--text-font);
     font-size: 18px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .footer > footer > a {
@@ -61,6 +67,11 @@ body {
 }
 
 /* Same value, multiple elements/classes */
+/* body, html {
+    height: 100%;
+    margin: 0;
+}  */
+
 .input > input, .input > select, .output > select, .submit > input {
     padding: 12px 10px;
     font-size: 20px;
