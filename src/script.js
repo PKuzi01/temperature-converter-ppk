@@ -6,6 +6,10 @@ const submitButton = document.getElementById('submit');
 const responseElement = document.getElementById('response');
 
 //Vars
+let celsius = `°C`;
+let fahrenheit = `°F`;
+let kelvin = `K`;
+let resultStatement = `Converted temperature: `;
 let outputValue;
 
 submitButton.addEventListener('click', function() {
@@ -66,5 +70,13 @@ submitButton.addEventListener('click', function() {
     outputValue = outputValue.toFixed(2);
 
     //Show result
-    responseElement.textContent = `Converted temperature: ${outputValue}`
+    if (outputUnit === "fahrenheit") {
+        responseElement.textContent = resultStatement + outputValue + fahrenheit;
+    } else if (outputUnit === "kelvin") {
+        responseElement.textContent = resultStatement + outputValue + kelvin;
+    } else if (outputUnit === "celsius") {
+        responseElement.textContent = resultStatement + outputValue + celsius;
+    } else {
+        responseElement.textContent = resultStatement + outputValue;
+    }; 
 });
