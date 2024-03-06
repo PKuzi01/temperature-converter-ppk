@@ -11,8 +11,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(255, 255, 255, 0.8);
-    /* TAKE THIS OUTTTTTT */
-    color: #fff;
+    color: #f3f1f1;
 }
 
 .app {
@@ -24,7 +23,7 @@ body {
     background-color: #7babb768 ;
     padding: 30px;
     border-radius: 25px;
-    box-shadow: 9px 9px 12px #529eb1dd;
+    box-shadow: 7px 7px 12px #529eb1ae;
 }
 
 .hero > h1 {
@@ -67,11 +66,6 @@ body {
 }
 
 /* Same value, multiple elements/classes */
-/* body, html {
-    height: 100%;
-    margin: 0;
-}  */
-
 .input > input, .input > select, .output > select, .submit > input {
     padding: 12px 10px;
     font-size: 20px;
@@ -81,3 +75,40 @@ body {
     font-family: var(--text-font);
 }
 
+@media (max-width: 380px) {
+    /* Single-use value */
+    .app {
+        margin: 50px 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .hero > h1 {
+        font-size: 25px;
+    }
+
+    .output > p {
+        font-size: 16px;
+    }
+
+    .answer > h3 {
+        font-size: 20px;
+    }
+
+    .footer > footer {
+        font-size: 13px;
+        margin: 18px;
+    }
+
+    /* Same value, multiple elements/classes */
+    .input > input, .input > select, .output > select, .submit > input {
+        padding: 8px 5px;
+        font-size: 14px;
+        border: none;
+        border-radius: 6px;
+        margin: 5px;
+        font-family: var(--text-font);
+    }
+}
