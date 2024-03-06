@@ -42,6 +42,11 @@ body {
     display: inline-block;
 }
 
+.submit > input {
+    background-color: #529eb1;
+    color: #f3f1f1;
+}
+
 .answer {
     margin: 30px;
 }
@@ -66,13 +71,18 @@ body {
 }
 
 /* Same value, multiple elements/classes */
-.input > input, .input > select, .output > select, .submit > input {
+.input > input, .input > select, .output > select, .submit > input, .submit > input:hover {
     padding: 12px 10px;
     font-size: 20px;
     border: none;
     border-radius: 6px;
     margin: 10px;
     font-family: var(--text-font);
+}
+
+.input > input, .input > select, .output > select, .submit > input:hover {
+    background-color: #f3f1f1;
+    color: #529eb1;
 }
 
 @media (max-width: 380px) {
