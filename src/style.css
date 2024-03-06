@@ -76,7 +76,7 @@ body {
 }
 
 /* Same value, multiple elements/classes */
-.input > input, .input > select, .output > select, .submit > input, .submit > input:hover {
+.input > input, .input > select, .output > select, .submit > input {
     padding: 12px 10px;
     font-size: 20px;
     border: none;
@@ -89,7 +89,7 @@ body {
     /* Single-use value */
     .app {
         margin: 50px 10px;
-        height: 660px;
+        max-height: 800px;
     }
 
     .container {
