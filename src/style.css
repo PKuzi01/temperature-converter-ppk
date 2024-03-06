@@ -79,6 +79,7 @@ body {
     /* Single-use value */
     .app {
         margin: 50px 10px;
+        height: 850px;
     }
 
     .container {
@@ -99,7 +100,7 @@ body {
 
     .footer > footer {
         font-size: 13px;
-        margin: 18px;
+        margin-top: 25px;
     }
 
     /* Same value, multiple elements/classes */
